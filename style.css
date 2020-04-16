@@ -1,0 +1,11 @@
+body, html {
+    background-color: #2A2E31;
+}
+
+.wrapper {
+    width: 1000px;
+}
+
+h4 {
+    color: green;
+}
