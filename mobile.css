@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     body {
         background-color: #2A2E31;
         margin: auto;
@@ -87,7 +87,7 @@
     }
 
     .about-me {
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     .about-container {
@@ -102,12 +102,14 @@
 
     .image img{
         text-align: left;
-        width: 270px; 
+        width: 100%;
+        filter: none;
     }
 
     .text-container {
         width: 100%;
         margin-left: 0px;
+        margin-top: 40px;
     }
 
     .text-container p {
@@ -121,12 +123,13 @@
     }
 
     .contact-me {
-        margin-top: 150px;
+        margin-top: 130px;
         width: 100%;
     }
 
     .form-div {
         margin: auto;
         margin-top: 60px;
+        width: 100%;
     }
 }
