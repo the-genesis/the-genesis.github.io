@@ -1,12 +1,14 @@
 body, html {
     background-color: #2A2E31;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     width: 1000px;
     margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .section {
@@ -61,7 +63,7 @@ body, html {
 }
 
 .btn {
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 300;
@@ -72,6 +74,11 @@ body, html {
     padding: 12px 30px;
     margin-top: 20px;
     transition: all .3s ease-in-out 0s;
+}
+
+.btn:hover {
+    box-shadow: 0px 4px 36px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
 }
 
 .heading {
@@ -113,6 +120,11 @@ body, html {
     transition: all .3s ease-in-out 0s;
 }
 
+.image img:hover {
+    filter: none;
+    transition-duration: .5s;
+}
+
 .detail {
     position: relative;
     display: flex;
@@ -120,8 +132,7 @@ body, html {
 }
 
 .detail img {
-    width: 17px;
-    height: 17px;
+    height: 20px;
     margin: 0px 10px 0px 0px;
 }
 
@@ -261,12 +272,55 @@ textarea:focus {
     cursor: pointer;
 }
 
-.btn:hover {
-    box-shadow: 0px 4px 36px 15px rgba(0,0,0,0.2);
-    transform: translateY(-1);
+footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #202426;
+    text-align: center;
+    padding: 20px 0px;
 }
 
-.image img:hover {
-    filter: none;
-    transition-duration: .5s;
+
+.footer-text p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0px 0px 0px 0px;
+    text-align: center;
 }
+
+.social-icons {
+    width: 150px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 10px 10px 0px 10px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.social-icons img:hover {
+    transform: translateY(-5px);
+}
+
+.github {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.github img {
+    height: 20px;
+    margin: 0px 10px 0px 0px;
+}
+
+
