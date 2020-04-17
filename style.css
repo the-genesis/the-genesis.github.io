@@ -11,6 +11,8 @@ body, html {
 
 .section {
     text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .intro {
@@ -69,7 +71,7 @@ body, html {
     border-radius: 40px;
     padding: 12px 30px;
     margin-top: 20px;
-    transition: box-shadow, .3s;
+    transition: all .3s ease-in-out 0s;
 }
 
 .heading {
@@ -108,6 +110,7 @@ body, html {
 
 .image img {
     filter: grayscale(100%);
+    transition: all .3s ease-in-out 0s;
 }
 
 .detail {
@@ -118,17 +121,38 @@ body, html {
 
 .detail img {
     width: 17px;
+    height: 17px;
     margin: 0px 10px 0px 0px;
 }
 
-.detail a {
+.link {
     margin: 0px;
+    position: relative;
     font-family: Work Sans;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: underline;
+    color: #83BBE6;
+    text-decoration: none;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(124, 153, 175);
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 .detail p {
@@ -189,6 +213,10 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
 
+input:focus {
+    outline: none;
+}
+
 textarea {
     width: 100%;
     box-sizing: border-box;
@@ -214,6 +242,10 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
 
+textarea:focus {
+    outline: none;
+}
+
 .submit {
     font-family: "Work Sans";
     font-size: 16px;
@@ -231,6 +263,7 @@ textarea::placeholder {
 
 .btn:hover {
     box-shadow: 0px 4px 36px 15px rgba(0,0,0,0.2);
+    transform: translateY(-1);
 }
 
 .image img:hover {
