@@ -132,4 +132,8 @@
         margin-top: 60px;
         width: 100%;
     }
+
+    footer {
+        padding-bottom: 50px;
+    }
 }
