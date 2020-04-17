@@ -73,6 +73,23 @@ body, html {
     transition: box-shadow .3s;
 }
 
+.heading {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #2A2E31;
+    text-shadow:
+    -1px -1px 0 rgba(255, 255, 255, 0.5),
+    1px -1px 0 rgba(255, 255, 255, 0.5),
+    -1px 1px 0 rgba(255, 255, 255, 0.5),
+    1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.about-me {
+    margin-top: 70px;
+}
 
 
 
@@ -81,5 +98,6 @@ body, html {
 
 .btn:hover {
     box-sizing: border-box;
-    box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 36px 15px rgba(0,0,0,0.2);    
+    /*transform: translateY(-1px);*/
 }
