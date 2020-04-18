@@ -2,12 +2,13 @@ body, html {
     background-color: #2A2E31;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
     width: 1000px;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 300px;
     padding-bottom: 100px;
 }
 
@@ -69,9 +70,11 @@ body, html {
     font-weight: 300;
     text-decoration: none;
     color: #ffffffd0;
+    background-color: #2A2E31;
     border: 1px #ffffffd0 solid;
     border-radius: 40px;
     padding: 12px 30px;
+    cursor: pointer;
     margin-top: 20px;
     transition: all .3s ease-in-out 0s;
 }
@@ -79,6 +82,10 @@ body, html {
 .btn:hover {
     box-shadow: 0px 4px 36px 15px rgba(0,0,0,0.2);
     transform: translateY(-2px);
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .heading {
@@ -255,21 +262,6 @@ textarea::placeholder {
 
 textarea:focus {
     outline: none;
-}
-
-.submit {
-    font-family: "Work Sans";
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 300;
-    text-decoration: none;
-    background-color: #2A2E31;
-    color: #ffffffd0;
-    border: 1px #ffffffd0 solid;
-    border-radius: 40px;
-    padding: 12px 30px;
-    margin-top: 50px;
-    cursor: pointer;
 }
 
 footer {
