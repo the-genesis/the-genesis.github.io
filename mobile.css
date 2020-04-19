@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 475px) {
     body {
         background-color: #2A2E31;
         margin: auto;
@@ -8,7 +8,12 @@
     .wrapper {
         width: inherit;
         margin: auto;
-        padding: 200px 20px 100px 20px;
+        padding-top: 200px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .intro {
@@ -140,6 +145,7 @@
     }
 
     footer {
+        margin-top: 100px;
         padding-bottom: 50px;
     }
 }
