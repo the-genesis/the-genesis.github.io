@@ -148,3 +148,58 @@
         padding-bottom: 50px;
     }
 }
+
+@media (min-width: 476px) and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .about-me, .contact-me {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .image-container {
+        width: 50%;
+        margin-left: 0px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .text-container {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .form-div {
+        width: 100%;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 660px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .image-container {
+        margin-left: 0px;
+    }
+}
