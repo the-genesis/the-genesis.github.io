@@ -129,7 +129,12 @@ body, html {
 
 .image img:hover {
     filter: none;
-    transition-duration: .5s;
+}
+
+@media (any-hover: none) {
+    .image img {
+        filter: none;
+    }
 }
 
 .detail {
