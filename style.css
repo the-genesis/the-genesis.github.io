@@ -29,6 +29,7 @@ body, html {
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .intro span {
@@ -194,6 +195,10 @@ body, html {
     margin-left: 100px;
 }
 
+p, a {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
 .text-container p {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
@@ -202,6 +207,7 @@ body, html {
     color: rgba(255, 255, 255, 0.75);
     margin: 0px 0px 15px 0px;
     text-align: left;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .contact-me {
