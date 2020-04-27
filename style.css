@@ -36,7 +36,7 @@ body, html {
     font-weight: 400;
 }
 
-.slack-id {
+.dribbble-id {
     position: relative;
     display: flex;
     width: 150px;
@@ -45,7 +45,7 @@ body, html {
     margin-top: 20px;
 }
 
-.slack-id p {
+.dribbble-id p {
     margin: 0px;
     font-family: Work Sans;
     font-weight: 300;
@@ -54,7 +54,7 @@ body, html {
     color: rgba(255, 255, 255, 0.75);
 }
 
-.slack-id img {
+.dribbble-id img {
     width: 17px;
     margin: 0px 10px 0px 0px;
 }
@@ -207,7 +207,6 @@ p, a {
     color: rgba(255, 255, 255, 0.75);
     margin: 0px 0px 15px 0px;
     text-align: left;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .contact-me {

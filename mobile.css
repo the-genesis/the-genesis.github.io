@@ -32,7 +32,7 @@
         font-weight: 400;
     }
 
-    .slack-id {
+    .dribbble-id {
         position: relative;
         display: flex;
         width: 150px;
@@ -41,7 +41,7 @@
         margin-top: 20px;
     }
     
-    .slack-id p {
+    .dribbble-id p {
         margin: 0px;
         font-family: Work Sans;
         font-weight: 300;
@@ -50,7 +50,7 @@
         color: rgba(255, 255, 255, 0.75);
     }
 
-    .slack-id img {
+    .dribbble-id img {
         width: 15px;
         margin: 0px 10px 0px 0px;
     }
