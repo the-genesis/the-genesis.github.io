@@ -224,8 +224,9 @@ h4, p, a {
 
 .work-text {
     text-align: left;
-    width: 50%;
-    padding-right: 100px;
+    width: 40%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .work-text a {
@@ -239,7 +240,7 @@ h4, p, a {
 }
 
 .work-text p {
-    width: 350px;
+    width: 90%;
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -250,7 +251,11 @@ h4, p, a {
 }
 
 .work-image {
-    width: 50%;
+    width: 60%;
+}
+
+.work-image img {
+    width: 100%;
 }
 
 .alt-work {
@@ -258,13 +263,27 @@ h4, p, a {
 }
 
 .alt-text {
-    padding-left: 200px;
+    padding-left: 0px;
     padding-right: 0px;
     justify-content: flex-end;
 }
 
 .alt-image {
     text-align: left;
+}
+
+#shakad {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    #shakad {
+        width: 750px;
+    }
+
+    .work-image img {
+        width: 700px;
+    }
 }
 
 .contact-me {

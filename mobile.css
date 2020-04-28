@@ -132,6 +132,38 @@
         text-align: left;
     }
 
+    .work-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-text {
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .work-text a {
+        font-size: 20px;
+    }
+
+    .work-text p {
+        width: 100%;
+    }
+
+    .work-image {
+        width: 100%;
+    }
+
+    .work-image img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #shakad {
+        width: 100%;
+    }
+
     .contact-me {
         margin-top: 130px;
         width: 100%;
@@ -154,9 +186,13 @@
         width: 100%;
     }
 
-    .about-me, .contact-me {
+    .about-me, .contact-me, .section {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .intro {
+        width: 90%;
     }
 
     .image-container {
@@ -169,6 +205,38 @@
     .text-container {
         width: 50%;
         margin-left: 20px;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-text {
+        width: 70%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .work-text a {
+        font-size: 20px;
+    }
+
+    .work-text p {
+        width: 100%;
+    }
+
+    .work-image {
+        width: 60%;
+    }
+
+    .work-image img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #shakad {
+        width: 100%;
     }
 
     .form-div {
@@ -196,10 +264,50 @@
         margin-top: 30px;
         margin-left: 0;
     }
+
+    .work-image {
+        width: 80%;
+    }
+
+    .work-text {
+        width: 100%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
     .image-container {
         margin-left: 0px;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-text {
+        width: 60%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .work-text a {
+        font-size: 20px;
+    }
+
+    .work-text p {
+        width: 100%;
+    }
+
+    .work-image {
+        width: 60%;
+    }
+
+    .work-image img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #shakad {
+        width: 100%;
     }
 }
