@@ -19,6 +19,14 @@ body, html {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h4, p, a {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
 .intro {
     width: 475px;
     margin: auto;
@@ -29,7 +37,6 @@ body, html {
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .intro span {
@@ -195,10 +202,6 @@ body, html {
     margin-left: 100px;
 }
 
-p, a {
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
-}
-
 .text-container p {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
@@ -206,6 +209,61 @@ p, a {
     line-height: 21px;
     color: rgba(255, 255, 255, 0.75);
     margin: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.works {
+    margin-top: 120px;
+}
+
+.work-container {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.work-text {
+    text-align: left;
+    width: 50%;
+    padding-right: 100px;
+}
+
+.work-text a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.work-text p {
+    width: 350px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0px 15px 0px;
+    text-align: left;
+}
+
+.work-image {
+    width: 50%;
+}
+
+.alt-work {
+    flex-direction: row-reverse;
+}
+
+.alt-text {
+    padding-left: 200px;
+    padding-right: 0px;
+    justify-content: flex-end;
+}
+
+.alt-image {
     text-align: left;
 }
 
