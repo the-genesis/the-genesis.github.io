@@ -12,6 +12,26 @@ body, html {
     padding-bottom: 0px;
 }
 
+.accounts-container {
+    margin-top: 30px;
+}
+
+.accounts-container a {
+    text-decoration: none;
+}
+
+.accounts {
+    margin: 10px;
+    cursor: pointer;
+    fill: #ffffffd0;
+    width: 20px;
+}
+
+.accounts:hover {
+    fill: #83BBE6;
+    transition-duration: 0.3s;
+}
+
 .section {
     width: 100%;
     text-align: center;
@@ -67,9 +87,9 @@ h4, p, a {
 }
 
 .buttons-div {
-    width: 200px;
+    width: 50%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .btn {
@@ -374,7 +394,7 @@ footer {
 }
 
 .social-icons {
-    width: 150px;
+    width: 10%;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -395,7 +415,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 100%;
     margin: auto;
     margin-top: 15px;
 }
