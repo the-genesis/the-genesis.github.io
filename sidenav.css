@@ -3,8 +3,8 @@
 }
 
 .wrapper-alt {
-    background-color: #202426;
-    transform: scale(0.97);
+    background-color: #2A2E31;
+    transform: scale(0.99);
 }
 
 .nav-icon-container {
@@ -13,12 +13,13 @@
     height: 50px;
     position: fixed;
     top: 5%;
-    left: 15%;
+    right: 10%;
     z-index: 999;
     box-sizing: border-box;
 }
 
 #nav-icon {
+    height: 40px;
     padding: 10px 0px;
     box-sizing: border-box;
     background-color: transparent;
@@ -26,16 +27,17 @@
 
 #nav-icon span {
     position: relative;
-    background-color: white;
-    border-radius: 5px;
+    background-color: #ffffffcc;
+    border-radius: 10px;
     display: block;
     content: '';
-    margin: 8px;
+    float: right;
+    margin: 4px;
     height: 2px;
 }
 
 .nav-icon-top {
-    width: 30px;
+    width: 35px;
     bottom: 0px;
     transition: bottom 0.4s ease-in-out .5s, transform 0.4s ease-in-out;
 }
@@ -54,7 +56,7 @@
 
 .bottom-clicked {
     transform: rotate(-135deg);
-    width: 30px; 
+    width: 35px; 
     bottom: 5px; 
     transition: width .4s ease-in-out, bottom 0.4s ease-in-out 0s, transform 0.4s ease-in-out 0.5s;
 }
@@ -64,8 +66,8 @@
     position: fixed;
     padding: 50px 0px;
     top: 0;
-    left: 0%;
-    transform: translateX(-100%);
+    right: 0%;
+    transform: translateX(100%);
     width: 400px;
     height: 100%;
     overflow-x: hidden;
@@ -76,7 +78,7 @@
 
 .sidenav-out {
     transform: translateX(0);
-    box-shadow: 200px 4px 250px rgba(0, 0, 0, 0.4);
+    box-shadow: -200px 4px 250px rgba(0, 0, 0, 0.4);
     transition: transform .7s cubic-bezier(0.55, 0.06, 0.68, 0.19) .3s, box-shadow .4s ease-in-out .8s;
 }
 
@@ -128,3 +130,6 @@
     background-image: url(./assets/linkedin-logo.svg);
     background-size: 20px;
 }
+
+/*MEDIA QUERIES*/
+

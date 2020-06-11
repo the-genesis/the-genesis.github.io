@@ -4,35 +4,44 @@ var navIconBottom = document.querySelector(".nav-icon-bottom");
 var sidenav = document.querySelector(".sidenav-container");
 var wrapper = document.querySelector(".wrapper");
 
-function change() {
-	let clsee = navIcon.getAttribute("class");
+function toggle() {
+	let cls = navIcon.getAttribute("class");
 
-	if (clsee === "not-hover") {
-		navIcon.className = "on-hove";
-		navIconTop.classList.add("top-clicked");
-		navIconBottom.classList.add("bottom-clicked");
-
-		sidenav.classList.add("sidenav-out");
-		wrapper.classList.add("wrapper-alt");
+	if (cls === "not-hover") {
+		openSidenav();
 	}
 	else {
-		navIcon.className = "not-hover";
-		navIconTop.classList.remove("top-clicked");
-		navIconBottom.classList.remove("bottom-clicked");
-
-		sidenav.classList.remove("sidenav-out");
-		wrapper.classList.remove("wrapper-alt");
+		closeSidenav();
 	}
-
 }
 
-navIcon.addEventListener("click", change);
+function openSidenav() {
+	navIcon.className = "on-hove";
+	navIconTop.classList.add("top-clicked");
+	navIconBottom.classList.add("bottom-clicked");
 
-/*
-navIcon.addEventListener("mouseover", function() {
-	navIconBottom.style.width = "30px";
-});
-navIcon.addEventListener("mouseleave", function() {
-	navIconBottom.style.width = "30px";
-});
-*/
+	sidenav.classList.add("sidenav-out");
+	wrapper.classList.add("wrapper-alt");
+}
+
+function closeSidenav() {
+	navIcon.className = "not-hover";
+	navIconTop.classList.remove("top-clicked");
+	navIconBottom.classList.remove("bottom-clicked");
+
+	sidenav.classList.remove("sidenav-out");
+	wrapper.classList.remove("wrapper-alt");
+}
+
+
+window.onclick = function(event) {
+	if(event.target == sidenav) {
+		closeSidenav();
+		//fix this so that sidenav would be closed when clicked outside.
+	}
+}
+
+//make navicon scroll out when page is being scrolled down, 
+//and scroll in when page is being scrolled down.
+
+navIcon.addEventListener("click", toggle);
