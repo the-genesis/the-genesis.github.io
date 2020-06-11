@@ -1,0 +1,145 @@
+* {
+    box-sizing:border-box;
+}
+
+.wrapper-alt {
+    background-color: #2A2E31;
+    transform: scale(0.99);
+}
+
+.nav-icon-container {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+#nav-icon {
+    height: 40px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+#nav-icon span {
+    position: relative;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    display: block;
+    content: '';
+    float: right;
+    margin: 4px;
+    height: 2px;
+}
+
+.nav-icon-top {
+    width: 35px;
+    bottom: 0px;
+    transition: bottom 0.4s ease-in-out .5s, transform 0.4s ease-in-out;
+}
+
+.nav-icon-bottom {
+    width: 20px;
+    bottom: 0px;
+    transition: width .4s ease-in-out .4s, bottom 0.4s ease-in-out .5s, transform 0.4s ease-in-out;
+}
+
+.top-clicked {
+    transform: rotate(135deg);
+    bottom: -5px;
+    transition: bottom 0.4s ease-in-out 0s, transform 0.4s ease-in-out 0.5s;
+}
+
+.bottom-clicked {
+    transform: rotate(-135deg);
+    width: 35px; 
+    bottom: 5px; 
+    transition: width .4s ease-in-out, bottom 0.4s ease-in-out 0s, transform 0.4s ease-in-out 0.5s;
+}
+
+.sidenav-container {
+    background-color: #2A2E31;
+    position: fixed;
+    padding: 50px 0px;
+    top: 0;
+    right: 0%;
+    transform: translateX(100%);
+    width: 400px;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 998;
+    box-shadow: none;
+    transition: transform .4s cubic-bezier(0.55, 0.06, 0.68, 0.19) .3s, box-shadow .4s ease-in-out;
+}
+
+.sidenav-out {
+    transform: translateX(0);
+    box-shadow: -200px 4px 250px rgba(0, 0, 0, 0.4);
+    transition: transform .7s cubic-bezier(0.55, 0.06, 0.68, 0.19) .3s, box-shadow .4s ease-in-out .8s;
+}
+
+.sidenav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav-heading {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.sidenav-heading2 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 60px 0px 15px 0px;
+    text-align: center;
+}
+
+.with-icon {
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: center;
+    padding: 12px 24px 12px 56px;
+    width: 190px;
+}
+
+.with-icon:hover {
+    box-shadow: none;
+}
+
+.dribble-link {
+    background-image: url(./assets/dribbble-logo.svg);
+}
+
+.behance-link {
+    background-image: url(./assets/behance-logo.svg);
+    background-size: 20px;
+}
+
+.github-link {
+    background-image: url(./assets/github-logo2.svg);
+    background-size: 20px;
+}
+
+.twitter-link {
+    background-image: url(./assets/twitter-logo2.svg);
+    background-size: 20px;
+}
+
+.linkedin-link {
+    background-image: url(./assets/linkedin-logo.svg);
+    background-size: 20px;
+}
+
+/*MEDIA QUERIES*/
+

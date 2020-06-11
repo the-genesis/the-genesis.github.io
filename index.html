@@ -14,6 +14,7 @@
     <title>Genesis Anosike | Designer, Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="sidenav.css">
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg"/> 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,300i,400,500&display=swap" rel="stylesheet">
@@ -21,6 +22,40 @@
 </head>
  
 <body>
+    <div class="nav-icon-container">
+		<div id="nav-icon" class="not-hover">
+			<span class="nav-icon-top"></span>
+			<span class="nav-icon-bottom"></span>
+		</div>
+	</div>
+
+	<div class="sidenav-container">
+        <div class="sidenav-content">
+            <h4 class="sidenav-heading intro">See my work on</h4>
+            <a href="https://dribbble.com/the-genesis" target="_blank">
+                <button href="" class="btn with-icon dribble-link">Dribbble</button>
+            </a>
+            <a href="https://behance.net/genesisanosike" target="_blank">
+                <button href="" class="btn with-icon behance-link">Behance</button>
+            </a>
+            <a href="https://github.com/the-genesis" target="_blank">
+                <button href="" class="btn with-icon github-link">Github</button>
+            </a>
+            <h4 class="sidenav-heading intro">Connect with me on</h4>
+            <a href="https://twitter.com/iammaershon" target="_blank">
+                <button href="" class="btn with-icon twitter-link">Twitter</button>
+            </a>
+            <a href="https://linkedin.com/in/genesis-anosike" target="_blank">
+                <button href="" class="btn with-icon linkedin-link">LinkedIn</button>
+            </a>
+            <p class="sidenav-heading2">Or just shoot me an email</p>
+            <div class="detail">
+                <img src="./assets/envelope.svg" alt="envelope">
+                <a class="link address" href="mailto:anosikegenesis@gmail.com">anosikegenesis@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    
     <div class="wrapper">
         <section class="section header">
             <h4 class="intro">Hi, I'm <span>Genesis Anosike</span>, a designer and aspiring front-end developer based in Ibadan, Nigeria.</h4>
@@ -59,10 +94,12 @@
                             <img src="./assets/me!.png" alt="Me!">
                         </a>
                     </div>
+                    <!--
                     <div class="detail">
                         <img src="./assets/envelope.svg" alt="envelope">
                         <a class="link address" href="mailto:anosikegenesis@gmail.com">anosikegenesis@gmail.com</a>
                     </div>
+                    -->
                 </div>
     
                 <div class="text-container">
@@ -157,5 +194,6 @@
             </div>
     </footer>
     
+    <script src="main.js"></script>
 </body>
 </html>
