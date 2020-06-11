@@ -3,6 +3,9 @@ var navIconTop = document.querySelector(".nav-icon-top");
 var navIconBottom = document.querySelector(".nav-icon-bottom");
 var sidenav = document.querySelector(".sidenav-container");
 var wrapper = document.querySelector(".wrapper");
+var overlay = document.getElementById("overlay");
+
+var sidenavIsOpen = false;
 
 function toggle() {
 	let cls = navIcon.getAttribute("class");
@@ -22,6 +25,10 @@ function openSidenav() {
 
 	sidenav.classList.add("sidenav-out");
 	wrapper.classList.add("wrapper-alt");
+
+	overlay.style.display = "block";
+
+	sidenavIsOpen = true;
 }
 
 function closeSidenav() {
@@ -31,11 +38,15 @@ function closeSidenav() {
 
 	sidenav.classList.remove("sidenav-out");
 	wrapper.classList.remove("wrapper-alt");
+
+	overlay.style.display = "none";
+
+	sidenavIsOpen = false;
 }
 
 
 window.onclick = function(event) {
-	if(event.target == sidenav) {
+	if(sidenavIsOpen && event.target == overlay) {
 		closeSidenav();
 		//fix this so that sidenav would be closed when clicked outside.
 	}
