@@ -77,12 +77,6 @@
     transition: transform .4s cubic-bezier(0.55, 0.06, 0.68, 0.19) .3s, box-shadow .4s ease-in-out;
 }
 
-@media (max-width: 425px) {
-    .sidenav-container {
-        width: 100%;
-    }
-}
-
 .sidenav-out {
     transform: translateX(0);
     box-shadow: -200px 4px 250px rgba(0, 0, 0, 0.4);
@@ -146,4 +140,28 @@
 .linkedin-link {
     background-image: url(./assets/linkedin-logo.svg);
     background-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+    .sidenav-container {
+        width: 100%;
+    }
+
+    .sidenav-heading {
+        width: 80%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .with-icon {
+        padding: 8px 20px 8px 56px;
+        width: 160px;
+        margin-top: 16px;
+    }
+
+    .sidenav-heading2 {
+        margin-top: 40px;
+    }
 }
