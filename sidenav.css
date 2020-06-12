@@ -16,6 +16,7 @@
     right: 10%;
     z-index: 999;
     box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
 }
 
 #nav-icon {
@@ -74,6 +75,12 @@
     z-index: 998;
     box-shadow: none;
     transition: transform .4s cubic-bezier(0.55, 0.06, 0.68, 0.19) .3s, box-shadow .4s ease-in-out;
+}
+
+@media (max-width: 425px) {
+    .sidenav-container {
+        width: 100%;
+    }
 }
 
 .sidenav-out {
@@ -140,6 +147,3 @@
     background-image: url(./assets/linkedin-logo.svg);
     background-size: 20px;
 }
-
-/*Sidenav is not responsive. Check on phone and fix*/
-

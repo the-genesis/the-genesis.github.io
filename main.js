@@ -1,4 +1,5 @@
 var navIcon = document.getElementById("nav-icon");
+var navIconContainer = document.querySelector(".nav-icon-container");
 var navIconTop = document.querySelector(".nav-icon-top");
 var navIconBottom = document.querySelector(".nav-icon-bottom");
 var sidenav = document.querySelector(".sidenav-container");
@@ -6,8 +7,10 @@ var wrapper = document.querySelector(".wrapper");
 var overlay = document.getElementById("overlay");
 
 var sidenavIsOpen = false;
+var scrollPos = 0;
+var scrollDirection = "not scrolled yet";
 
-function toggle() {
+navIcon.addEventListener("click", function() {
 	let cls = navIcon.getAttribute("class");
 
 	if (cls === "not-hover") {
@@ -16,7 +19,7 @@ function toggle() {
 	else {
 		closeSidenav();
 	}
-}
+});
 
 function openSidenav() {
 	navIcon.className = "on-hove";
@@ -44,15 +47,34 @@ function closeSidenav() {
 	sidenavIsOpen = false;
 }
 
-
 window.onclick = function(event) {
 	if(sidenavIsOpen && event.target == overlay) {
 		closeSidenav();
-		//fix this so that sidenav would be closed when clicked outside.
 	}
 }
-
 //make navicon scroll out when page is being scrolled down, 
 //and scroll in when page is being scrolled down.
 
-navIcon.addEventListener("click", toggle);
+
+
+window.addEventListener("scroll", function() {
+	if((document.body.getBoundingClientRect()).top > scrollPos) {
+		scrollDirection = "up";
+	}
+	else {
+		scrollDirection = "down";
+	}
+
+	scrollPos = (document.body.getBoundingClientRect()).top;
+/*
+	if(scrollDirection == "down") {
+		navIconContainer.style.position = "absolute";
+	}
+	else {
+		navIconContainer.style.position = "fixed";
+	}
+*/
+});
+
+
+
