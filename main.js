@@ -13,7 +13,7 @@ var scrollDirection = "not scrolled yet";
 navIcon.addEventListener("click", function() {
 	let cls = navIcon.getAttribute("class");
 
-	if (cls === "not-hover") {
+	if (cls === "unclicked") {
 		openSidenav();
 	}
 	else {
@@ -22,7 +22,7 @@ navIcon.addEventListener("click", function() {
 });
 
 function openSidenav() {
-	navIcon.className = "on-hove";
+	navIcon.className = "clicked";
 	navIconTop.classList.add("top-clicked");
 	navIconBottom.classList.add("bottom-clicked");
 
@@ -35,7 +35,7 @@ function openSidenav() {
 }
 
 function closeSidenav() {
-	navIcon.className = "not-hover";
+	navIcon.className = "unclicked";
 	navIconTop.classList.remove("top-clicked");
 	navIconBottom.classList.remove("bottom-clicked");
 
