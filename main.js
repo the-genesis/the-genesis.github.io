@@ -13,7 +13,7 @@ var scrollDirection = "not scrolled yet";
 navIcon.addEventListener("click", function() {
 	let cls = navIcon.getAttribute("class");
 
-	if (cls === "unclicked") {
+	if (sidenavIsOpen == false) {
 		openSidenav();
 	}
 	else {
