@@ -142,6 +142,11 @@
     background-size: 20px;
 }
 
+.medium-link {
+    background-image: url(./assets/medium-logo.svg);
+    background-size: 20px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 425px) {
