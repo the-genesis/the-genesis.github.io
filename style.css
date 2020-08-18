@@ -38,6 +38,10 @@ body, html {
     width: 20px;
 }
 
+.medium {
+    width: 22px;
+}
+
 .accounts:hover {
     fill: #83BBE6;
     transition-duration: 0.3s;
