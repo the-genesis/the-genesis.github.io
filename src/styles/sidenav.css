@@ -119,31 +119,31 @@
 }
 
 .dribble-link {
-    background-image: url(./assets/dribbble-logo.svg);
+    background-image: url(/assets/dribbble-logo.svg);
 }
 
 .behance-link {
-    background-image: url(./assets/behance-logo.svg);
+    background-image: url(/assets/behance-logo.svg);
     background-size: 20px;
 }
 
 .github-link {
-    background-image: url(./assets/github-logo2.svg);
+    background-image: url(/assets/github-logo2.svg);
     background-size: 20px;
 }
 
 .twitter-link {
-    background-image: url(./assets/twitter-logo2.svg);
+    background-image: url(/assets/twitter-logo2.svg);
     background-size: 20px;
 }
 
 .linkedin-link {
-    background-image: url(./assets/linkedin-logo.svg);
+    background-image: url(/assets/linkedin-logo.svg);
     background-size: 20px;
 }
 
 .medium-link {
-    background-image: url(./assets/medium-logo.svg);
+    background-image: url(/assets/medium-logo.svg);
     background-size: 20px;
 }
 

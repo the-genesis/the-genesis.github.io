@@ -108,6 +108,11 @@ h4, p, a {
 }
 
 .btn {
+    /* Replicates the two <button> UA defaults the <a> elements now carrying this
+       class do not get: inline-block (so width and vertical padding apply) and
+       centred text (the sidenav pills are fixed-width, so alignment is visible). */
+    display: inline-block;
+    text-align: center;
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     line-height: 19px;
